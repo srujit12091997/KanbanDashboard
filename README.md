@@ -3,7 +3,8 @@
 A modern, interactive Kanban board for managing development tasks with a beautiful user interface and drag-and-drop functionality. Created by Srujit Varasala.
 
 <div align="center">
-    <img src="C:\Users\sruji\OneDrive\Desktop\FullStackDeveloper\Kanban board\images\Snap.png" alt="Developer Dashboard Preview" width="800"/>
+    <img src="![Snap](https://github.com/user-attachments/assets/815d19ed-1ca2-4464-b077-9c84e6c65b82)
+" alt="Developer Dashboard Preview" width="800"/>
 </div>
 
 ## 🌟 Features
