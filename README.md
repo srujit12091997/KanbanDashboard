@@ -2,7 +2,7 @@
 
 A modern, interactive Kanban board for managing development tasks with a beautiful user interface and drag-and-drop functionality. Created by Srujit Varasala.
 
-![Developer Dashboard Preview](./images/snap.PNG)
+![Developer Dashboard Preview](./images/snap.png)
 
 ## 🌟 Features
 
