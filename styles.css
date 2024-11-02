@@ -1,0 +1,207 @@
+/* styles.css */
+:root {
+    --crucial-color: #22c55e;
+    --important-color: #eab308;
+    --nice-color: #3b82f6;
+    --bg-color: #e9d5ff;
+    --white: #ffffff;
+    --gray-100: #f3f4f6;
+    --gray-200: #e5e7eb;
+    --gray-300: #d1d5db;
+    --gray-600: #4b5563;
+    --gray-700: #374151;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background-color: var(--bg-color);
+    min-height: 100vh;
+}
+
+.kanban-board {
+    padding: 1rem;
+}
+
+header {
+    margin-bottom: 1.5rem;
+}
+
+header h1 {
+    color: var(--gray-700);
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.board-columns {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.column {
+    flex: 1;
+    min-width: 300px;
+    background: var(--white);
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.column-header {
+    padding: 1rem;
+    border-radius: 0.5rem 0.5rem 0 0;
+    color: var(--white);
+}
+
+.crucial .column-header {
+    background-color: var(--crucial-color);
+}
+
+.important .column-header {
+    background-color: var(--important-color);
+}
+
+.nice-to-have .column-header {
+    background-color: var(--nice-color);
+}
+
+.tasks {
+    padding: 1rem;
+    min-height: 200px;
+}
+
+.task {
+    background-color: var(--gray-100);
+    padding: 0.75rem;
+    margin-bottom: 0.5rem;
+    border-radius: 0.25rem;
+    color: var(--gray-700);
+    cursor: move;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: transform 0.2s ease;
+}
+
+.task:hover {
+    transform: translateY(-2px);
+    background-color: var(--gray-200);
+}
+
+.task.dragging {
+    opacity: 0.5;
+}
+
+.task-content {
+    flex-grow: 1;
+}
+
+.task-controls {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.task-controls button {
+    background: none;
+    border: none;
+    color: var(--gray-600);
+    cursor: pointer;
+    padding: 0.25rem;
+    font-size: 1rem;
+    transition: color 0.2s ease;
+}
+
+.task-controls button:hover {
+    color: var(--gray-700);
+}
+
+.add-task {
+    padding: 1rem;
+}
+
+.add-task-btn {
+    width: 100%;
+    padding: 0.5rem;
+    background: none;
+    border: none;
+    color: var(--gray-600);
+    cursor: pointer;
+    text-align: left;
+    transition: background-color 0.2s ease;
+    border-radius: 0.25rem;
+}
+
+.add-task-btn:hover {
+    background-color: var(--gray-100);
+    color: var(--gray-700);
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal.show {
+    display: flex;
+}
+
+.modal-content {
+    background-color: var(--white);
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    width: 90%;
+    max-width: 500px;
+}
+
+.modal-content h3 {
+    margin-bottom: 1rem;
+    color: var(--gray-700);
+}
+
+.modal-content input {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid var(--gray-300);
+    border-radius: 0.25rem;
+}
+
+.modal-buttons {
+    display: flex;
+    gap: 0.5rem;
+    justify-content: flex-end;
+}
+
+.modal-buttons button {
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    transition: opacity 0.2s ease;
+}
+
+.modal-buttons button:hover {
+    opacity: 0.9;
+}
+
+.add-btn {
+    background-color: var(--crucial-color);
+    color: var(--white);
+}
+
+.cancel-btn {
+    background-color: var(--gray-300);
+    color: var(--gray-700);
+}
