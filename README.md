@@ -2,7 +2,6 @@
 
 A modern, interactive Kanban board for managing development tasks with a beautiful user interface and drag-and-drop functionality. Created by Srujit Varasala.
 
-![Alt text](https://github.com/your-username/your-repo-name/raw/branch-name/path/to/image.png)
 
 ## 🌟 Features
 
@@ -181,14 +180,13 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 📞 Support
 
-For support, email srujit.varasala@gmail.com or open an issue in the repository.
+For support, email srujit.v@gmail.com or open an issue in the repository.
 
 ## 👨‍💻 Author
 
 **Srujit Varasala**
-- GitHub: [@srujitv](https://github.com/srujitv)
-- LinkedIn: [Srujit Varasala](https://linkedin.com/in/srujitv)
-- Portfolio: [srujitv.dev](https://srujitv.dev)
+- GitHub: [@srujitv](https://github.com/srujit12091997)
+- LinkedIn: [Srujit Varasala](https://www.linkedin.com/in/srujitvarasala/)
 
 ---
 Made with ❤️ by Srujit Varasala
